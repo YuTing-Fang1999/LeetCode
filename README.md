@@ -15,3 +15,6 @@
 
 ## C++ Function
 ### next_permutation
+```
+31
+```
