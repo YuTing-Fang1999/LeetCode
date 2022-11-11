@@ -19,17 +19,17 @@ Explanation: The longest common subsequence is "abc" and its length is 3.
 X = <x1, x2, ...xi > i characters
 Y = <y1, y2, ...yj > j characters
 //c[i,j] = LCS(xi, yj) 
-if xi==yj: c[i, j] = c[i-1, j-1]+1 (Add characters at the same time)
-if xi!=yj: c[i, j] = max(c[i, j-1], c[i-1, j]) (Drop characters of X or Drop characters of Y)
+if xi==yj: c[i, j] = c[i-1, j-1]+1 (add characters at the same time)
+if xi!=yj: c[i, j] = max(c[i, j-1], c[i-1, j]) (characters from X or characters from Y)
 ```
 ### Example
 ```
 X = ABCDC
 Y = ACCBD
-c[2, 3] = LCS(AB, ACC) = max(LCS(A, ACC), LCS(AB, AC))
+c[2, 3] = LCS(AB, ACC) = max(LCS(A, ACC), LCS(AB, AC)) (add x2 or add y3)
 c[2, 4] = LCS(AB, ACCB) = LCS(A, ACC)+1 = c[1, 3]+1
 ```
-
+有點像是coin exchange逆推的概念  
 
 ### Code
 ```cpp
