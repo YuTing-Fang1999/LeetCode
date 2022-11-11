@@ -7,6 +7,9 @@
 
 ### next_permutation
 
-### LCS
+### LCS (Longest Common Subsequence)
+```
+1143
+```
 
 ### 
