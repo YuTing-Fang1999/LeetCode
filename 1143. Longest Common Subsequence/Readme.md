@@ -19,7 +19,7 @@ X = <x1, x2, ...xi > i characters
 Y = <y1, y2, ...yj > j characters
 //c[i,j] = LCS(xi, yj) 
 if xi==yj: c[i, j] = c[i-1, j-1]+1 (Add characters at the same time)
-if xi!=yj: c[i, j] = max(c[i, j-1], c[i-1, j]) (Drop characters of X Drop characters of Y)
+if xi!=yj: c[i, j] = max(c[i, j-1], c[i-1, j]) (Drop characters of X or Drop characters of Y)
 ```
 ### Example
 ```
@@ -27,6 +27,8 @@ X = ABCDC
 Y = ACCBD
 c[2, 2] = LCS(AB, AC) = 1
 c[3, 3] = c[2, 2]+1 = 2 = LCS(ABC, ACC)
+
+c[2, 4] = c[1,3]+1 = LCS(A, ACC)+1 = LCS(AB, ACCB)
 ```
 
 
