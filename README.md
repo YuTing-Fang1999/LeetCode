@@ -1,15 +1,17 @@
 # LeetCode
 
+## Data Structure
 ### stack
 ```
 901
 ```
 
-### next_permutation
 
+## Algorithm
 ### LCS (Longest Common Subsequence)
 ```
 1143
 ```
 
-### 
+## C++ Function
+### next_permutation
