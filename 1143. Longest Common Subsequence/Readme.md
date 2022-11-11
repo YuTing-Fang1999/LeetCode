@@ -18,7 +18,7 @@ Explanation: The longest common subsequence is "abc" and its length is 3.
 X = <x1, x2, ...xi > i characters
 Y = <y1, y2, ...yj > j characters
 //c[i,j] = LCS(xi, yj) 
-if xi==yj: c[i, j] = c[i-1, j-1] (Add characters at the same time)
+if xi==yj: c[i, j] = c[i-1, j-1]+1 (Add characters at the same time)
 if xi!=yj: c[i, j] = max(c[i, j-1], c[i-1, j]) (Drop characters of X Drop characters of Y)
 ```
 ### Example
