@@ -1,5 +1,6 @@
 ## 1143. Longest Common Subsequence
 
+## Description
 ### Example 1:
 ```
 Input: text1 = "abcde", text2 = "ace" 
@@ -25,10 +26,8 @@ if xi!=yj: c[i, j] = max(c[i, j-1], c[i-1, j]) (Drop characters of X or Drop cha
 ```
 X = ABCDC
 Y = ACCBD
-c[2, 2] = LCS(AB, AC) = 1
-c[3, 3] = c[2, 2]+1 = 2 = LCS(ABC, ACC)
-
-c[2, 4] = c[1,3]+1 = LCS(A, ACC)+1 = LCS(AB, ACCB)
+c[2, 3] = LCS(AB, ACC) = max(LCS(A, ACC), LCS(AB, AC))
+c[2, 4] = LCS(AB, ACCB) = LCS(A, ACC)+1 = c[1, 3]+1
 ```
 
 
