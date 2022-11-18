@@ -22,3 +22,8 @@
 
 ### stringstream(將字串以空格切開)
 [151. Reverse Words in a String](https://github.com/YuTing-Fang1999/LeetCode/tree/main/151.%20Reverse%20Words%20in%20a%20String)
+
+### substr
+```cpp
+s.substr(cur, maxLen); //字串s索引cur數起的maxLen個字元
+```
