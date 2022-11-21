@@ -27,3 +27,9 @@
 ```cpp
 s.substr(cur, maxLen); //字串s索引cur數起的maxLen個字元
 ```
+### pair< int, int >
+```cpp
+pair< int, int > p;
+p.first; //取值，注意沒括號
+p.second;
+```
